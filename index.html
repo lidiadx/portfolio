@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Lidia's Portfolio</title>
+    <meta name="author" content="Lidia Khmylko" />
+    <meta
+      name="description"
+      content="Personal Homepage - Portfolio - Featured Projects - Lidia Khmylko"
+    />
+    <meta
+      name="keywords"
+      content="Portfolio, Software, JavaScript, StockTrigger, Voigtai"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- ICONS-->
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="application-name" content="Lidia's Portfolio" />
+    <meta name="apple-mobile-web-app-title" content="Lidia's Portfolio" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="./img/favicon-48x48.png?v=2"
+    />
+    <link rel="apple-touch-icon" href="./img/favicon-192x192.png" />
+    <link rel="manifest" href="manifest.json" />
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="script.js" async defer></script>
+  </head>
+  <body>
+    <nav id="nav">
+      <div id="sandwich">
+        <a href="javascript:void(0);" onclick="toggleSandwichMenu()">
+          <img src="./img/menu.svg" alt="hamburger-menu" width="24px"
+        /></a>
+      </div>
+      <div id="mobile-links">
+        <ul>
+          <li class="home">
+            <a href="#hero"
+              ><span class="iconify" data-icon="mdi:home-outline"></span>
+              Home</a
+            >
+          </li>
+          <li class="projects">
+            <a href="#projects"
+              ><span class="iconify" data-icon="mdi:cog-outline"></span>
+              Projects</a
+            >
+          </li>
+          <li class="about">
+            <a href="#about"
+              ><span
+                class="iconify"
+                data-icon="mdi:face-woman-shimmer-outline"
+              ></span>
+              About</a
+            >
+          </li>
+          <li class="contact">
+            <a href="#contact"
+              ><span class="iconify" data-icon="mdi:at"></span> Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div id="desktop-links">
+        <ul>
+          <li class="home">
+            <a href="#hero"
+              ><span
+                class="iconify"
+                data-icon="mdi:home-outline"
+                data-width="20"
+                data-height="20"
+              ></span>
+              Home</a
+            >
+          </li>
+          <li class="projects">
+            <a href="#projects"
+              ><span
+                class="iconify"
+                data-icon="mdi:cog-outline"
+                data-width="20"
+                data-height="20"
+              ></span>
+              Projects</a
+            >
+          </li>
+          <li class="about">
+            <a href="#about"
+              ><span
+                class="iconify"
+                data-icon="mdi:face-woman-shimmer-outline"
+                data-width="20"
+                data-height="20"
+              ></span>
+              About</a
+            >
+          </li>
+          <li class="contact">
+            <a href="#contact"
+              ><span
+                class="iconify"
+                data-icon="mdi:at"
+                data-width="20"
+                data-height="20"
+              ></span>
+              Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="hero" class="hero">
+      <div class="typing-container">
+        <h1 id="hero-title"></h1>
+        <h1 id="hero-description">Hi, I am Lidia</h1>
+        <h1 id="hero-description">Fullstack Software Engineer&nbsp;</h1>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section_title">Featured Projects</h2>
+      <div class="projects-container">
+        <div class="project">
+          <div class="project-details-container">
+            <div class="details-text">
+              <h3 class="project-title">Voigt.ai</h3>
+              <p class="project-description">
+                A multi-tenant cloud hosted (K8), application for managing
+                benchmarks and tests of arbitrary models and AI pipelines.
+              </p>
+              <p class="project-description">
+                I created React and MaterialUI components for all model
+                evaluation tracking UI and application, designed and developed
+                Charting of model metrics with Recharts.js and D3, worked on
+                model visualization modules with D3.js and shape library to
+                display explanation types. I also built an AWS Lambda backend to
+                implement pipeline execution and lifecycle for automated model
+                benchmarking.
+              </p>
+              <p>
+                <span class="teach-size-highlight">Team Size: </span>4 people
+              </p>
+              <p>
+                <span class="tech-stack-highlight">Tech Stack: </span>Google Cloud, Kubernetes,, Node.js Express.js, React, MaterialUI, D3, Recharts.js
+              </p>
+            </div>
+            <div class="details-buttons">
+              <a href="#" class="project-button project-live"
+                >Live App
+                <span class="iconify" data-icon="mdi:open-in-new"></span
+              ></a>
+
+              <a href="#" class="project-button project-page"
+                >Project Page <span class="iconify" data-icon="mdi:xml"></span
+              ></a>
+            </div>
+          </div>
+          <div class="project-img-container">
+            <img
+              src="./img/voigtai_full.png"
+              alt="Visual AI"
+              class="project-preview"
+            />
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-details-container">
+            <div class="details-text">
+              <h3 class="project-title">
+                <span class="stocktrigger-logo"></span
+                ><span class="stocktrigger-title">StockTrigger</span>
+              </h3>
+              <p class="project-description">
+                A conversational app on Amazon Echo, focused on stock quoting
+                and tracking use cases.
+              </p>
+              <p class="project-description">
+                StockTrigger relies on Node.js microservices backend, the
+                REST/JSON API layer and API schemas, as well as scalable
+                connectors running in recurring fashion to synchronize stock
+                prices in near realtime with various financial databases and
+                services via AWS Cloudwatch Events, AWS SQS and Lambdas.
+              </p>
+              <p class="project-description"></p>
+              <p>
+                <span class="tech-stack-highlight">Tech Stack: </span>Node.js,
+                Alexa Skills Kit, Express, DynamoDB, AWS Lambda, SQS, Angular.js
+              </p>
+            </div>
+            <div class="details-buttons">
+              <a
+                href="https://www.amazon.com/delab-StockTrigger/dp/B01N578BV4"
+                class="project-button project-page"
+                >Project Page
+                <span class="iconify" data-icon="mdi:open-in-new"></span
+              ></a>
+            </div>
+          </div>
+          <div class="project-img-container">
+            <img
+              src="./img/stocktrigger-architecture.png"
+              alt="Visual AI"
+              class="project-preview"
+            />
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-details-container">
+            <div class="details-text">
+              <h3 class="project-title">CheckList</h3>
+              <p class="project-description">
+                A personal productivity tool that allows tracking of habits. One
+                can set weekly goals and see monthly statistics and do some
+                customization like habit pinning and templating.
+              </p>
+              <p>
+                <span class="tech-stack-highlight">Tech Stack: </span>Next.js, React,
+                Tailwind CSS, MongoDB Atlas
+              </p>
+            </div>
+            <div class="details-buttons">
+              <a href="https://checklist-app-phi.vercel.app/" class="project-button project-live"
+                >Live App
+                <span class="iconify" data-icon="mdi:open-in-new"></span
+              ></a>
+              <a href="https://github.com/lidiadx/checklist-app" class="project-button project-page"
+                >Project Page <span class="iconify" data-icon="mdi:xml"></span
+              ></a>
+            </div>
+          </div>
+          <div class="project-img-container">
+            <img
+              src="./img/checklist.png"
+              alt="Visual AI"
+              class="project-preview"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="more">
+        <a href="https://github.com/lidiadx"
+          >View more projects
+          <span class="iconify" data-icon="mdi:open-in-new"></span
+        ></a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section_title">About</h2>
+      <div class="about-container">
+        <div class="profile-container">
+          <div class="profile-description">
+            <div class="image-container">
+              <img src="./img/person_orange.svg" alt="Person" class="person" />
+            </div>
+            <p>
+              As a full stack developer, I like creating beautiful, engaging and
+              interactive software. I come from Java/Spring stack, but over time
+              turned to more lightweight technologies. My main areas of interest
+              are JavaScript, React, data visualization and creating complex
+              interactive products.
+            </p>
+          </div>
+          <!-- end of profile-description -->
+        </div>
+        <!-- end of profile-container -->
+        <div class="tech-icons-container">
+          <div class="column col-one">
+            <div class="tech-icon">
+              <i class="devicon-react-original colored icon"></i>
+              <span class="icon-name">REACT</span>
+            </div>
+            <div class="tech-icon">
+              <i class="devicon-typescript-plain colored icon"></i>
+              <span class="icon-name">TYPESCRIPT</span>
+            </div>
+            <div class="tech-icon">
+              <i class="devicon-nextjs-original colored icon"></i>
+              <span class="icon-name">NEXT.JS</span>
+            </div>
+            <div class="tech-icon">
+              <i class="devicon-express-original icon"></i>
+              <span class="icon-name">EXPRESS</span>
+            </div>
+            <div class="tech-icon">
+              <i class="devicon-redux-original colored icon"></i>
+              <span class="icon-name">REDUX</span>
+            </div>
+          </div>
+          <div class="column col-two">
+            <div class="tech-icon">
+              <i class="devicon-javascript-plain colored icon"></i>
+              <span class="icon-name">JAVASCRIPT</span>
+            </div>
+            <div class="tech-icon">
+              <i class="devicon-angularjs-plain colored icon"></i>
+              <span class="icon-name">ANGULAR</span>
+            </div>
+            <div class="tech-icon">
+              <i class="devicon-mocha-plain colored icon"></i>
+              <span class="icon-name">MOCHA</span>
+            </div>
+            <div class="tech-icon">
+              <i class="devicon-tailwindcss-plain colored icon"></i>
+              <span class="icon-name">TAILWIND</span>
+            </div>
+            <div class="tech-icon">
+              <i class="devicon-d3js-original colored icon"></i>
+              <span class="icon-name">D3</span>
+            </div>
+          </div>
+          <div class="column col-three">
+            <div class="tech-icon">
+              <i class="devicon-nodejs-plain colored icon"></i>
+              <span class="icon-name">NODEJS</span>
+            </div>
+            <div class="tech-icon">
+              <i class="devicon-webpack-plain colored icon"></i>
+              <span class="icon-name">WEBPACK</span>
+            </div>
+            <div class="tech-icon">
+              <i class="devicon-git-plain colored icon"></i>
+              <span class="icon-name">GIT</span>
+            </div>
+            <div class="tech-icon">
+              <i class="devicon-mysql-plain icon"></i>
+              <span class="icon-name">MYSQL</span>
+            </div>
+            <div class="tech-icon">
+              <i class="devicon-mongodb-plain colored icon"></i>
+              <span class="icon-name">MONGODB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of about-container -->
+      <aside>
+        <p class="quote">Per aspera ad astra</p>
+      </aside>
+    </section>
+
+    <section id="contact">
+      <h2 class="section_title">Contact</h2>
+      <p class="contact-text">Feel free to reach out</p>
+    </section>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="https://github.com/lidiadx" class="tech-icon"
+            ><i class="devicon-github-original icon"></i><span>GitHub</span></a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/lidia-khmylko/" class="tech-icon"
+            ><i class="devicon-linkedin-plain colored icon"></i
+            ><span>LinkedIn</span></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.xing.com/profile/Lidia_Khmylko/"
+            class="tech-icon"
+            ><span class="xing-icon"></span><span>Xing</span></a
+          >
+        </li>
+      </ul>
+      <div class="copyright"><p>Copyright &copy; 2024 Lidia Khmylko</p></div>
+    </footer>
+  </body>
+</html>

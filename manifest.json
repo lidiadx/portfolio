@@ -1,0 +1,45 @@
+{
+  "name": "Lidia's Portfolio",
+  "short_name": "Lidia Khmylko",
+  "icons" : [
+    {
+        "src": "./img/favicon.svg",
+        "sizes": "any",
+        "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+        "src": "./img/favicon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+      "purpose": "any"
+    },  
+    {
+        "src": "./img/favicon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+      "purpose": "any"
+    },
+    {
+        "src": "./img/favicon.svg",
+        "sizes": "any",
+        "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+        "src": "./img/favicon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+      "purpose": "maskable"
+    },  
+    {
+        "src": "/assets/icons/isocket-green-R-catalog-maskable-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+      "purpose": "maskable"
+    }
+  ] ,
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "fullscreen"
+}
